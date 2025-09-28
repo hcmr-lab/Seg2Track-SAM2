@@ -1,0 +1,22 @@
+{
+  "detection_threshold": 0.25,
+  "addition_threshold": {
+    "1": 0.6,
+    "2": 0.85
+  },
+  "removal_threshold": 0.1,
+  "removal_tries": 5,
+  "reprompt_threshold": 0.7,
+  "removal_bool": true,
+  "reprompt_bool": true,
+  "save_images": true,
+  "output_tag": "MOT15_example",
+  "dataset_type": "MOT",
+  "mot_dataset": "MOT15",
+  "subset": "train",
+  "base_path": "{dataset_root}",
+  "detections_path": "{detection_root}",
+  "detection_type": "MOT",
+  "sam2_checkpoint": "{sam2_root}/sam2/checkpoints/sam2.1_hiera_large.pt",
+  "sam2_model_config": "{sam2_root}/sam2_configs/sam2.1/sam2.1_hiera_l.yaml"
+}
